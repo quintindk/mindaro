@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "bridge-to-kubernetes.service",
+			"type": "bridge-to-kubernetes.service",
+			"service": "bikes",
+			"ports": [
+				3000
+			],
+			"targetCluster": "azure-kubernetes",
+			"targetNamespace": "bikeapp",
+			"isolateAs": "quintin-e1c2"
+		}
+	]
+}
